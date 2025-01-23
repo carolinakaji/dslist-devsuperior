@@ -23,7 +23,9 @@ public class Game {
 	private String platforms;
 	private double score;
 	private String imgUrl;
+	@Column(columnDefinition = "TEXT") // Faz o campo receber TEXT, com caracteres maiores que 250
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {}
